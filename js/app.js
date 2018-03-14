@@ -29,10 +29,9 @@ function getTheme(){
   return randomTheme;
 };
 
+var Button = document.getElementById("buttontool");
 
-var button = document.getElementById("buttontool");
-
-button.onclick = function() {
+Button.onclick = function() {
   var resultTool = getTools();
   var resultTheme = getTheme();
 
@@ -41,6 +40,4 @@ button.onclick = function() {
 
   var placeholdertheme = document.getElementById("placeholdertheme");
   placeholdertheme.innerHTML = resultTheme;
-
-
 };
