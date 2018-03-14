@@ -1,14 +1,25 @@
+jQuery(document).ready(function ($) {
 
+  //Open Rules
+  jQuery(document).on("click",".OpenRules", function() {
+    jQuery('.Overlay').css('display','flex');
+  });
+
+  //Close Rules
+  jQuery(document).on("click",".Button--Close", function() {
+    jQuery('.Overlay').css('display','none');
+  });
+});
 
 //array with tools
-
 let tools=[
-    "Phtoshop",
-    "ilustrator",
+    "Photoshop",
+    "Illustrator",
     "Sketch",
-    "marvel",
+    "Marvel",
     "Figma",
-    "Canvas business model"
+    "Canvas Business Model",
+    "Git"
 ];
 
 let theme=[
