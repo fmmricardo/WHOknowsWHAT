@@ -1,3 +1,20 @@
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TAttZmIi2fyO91M8lOy8nYsNRqwX-W7l4hTQywYAapE/edit?usp=sharing';
+
+function init() {
+  Tabletop.init( { key: publicSpreadsheetUrl,
+                   callback: showInfo,
+                   simpleSheet: true } )
+}
+
+function showInfo(data, tabletop) {
+  alert('Successfully processed!')
+  console.log(data);
+
+
+}
+
+window.addEventListener('DOMContentLoaded', init)
+
 jQuery(document).ready(function ($) {
 
   //Open Rules
@@ -13,13 +30,13 @@ jQuery(document).ready(function ($) {
 
 //array with tools
 let tools=[
-    "Photoshop",
-    "Illustrator",
-    "Sketch",
-    "Marvel",
-    "Figma",
-    "Canvas Business Model",
-    "Git"
+    // "Photoshop",
+    // "Illustrator",
+    // "Sketch",
+    // "Marvel",
+    // "Figma",
+    // "Canvas Business Model",
+    // "Git"
 ];
 
 let theme=[
