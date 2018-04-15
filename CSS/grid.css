@@ -1,0 +1,79 @@
+.MainContainer{
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  /* small screens 1fr */
+  grid-template-columns: 1fr;
+  grid-auto-rows: 0.5fr minmax(2fr, auto) 1fr;
+  grid-gap: 10px;
+  /* each sparate string ("line") create a row
+  A column is creatd for each word or grid-area name in the string
+  */
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* grid areas */
+.Heading {
+  grid-area: header;
+}
+.MainText{
+  grid-area: main;
+}
+
+main {
+  grid-area: main;
+}
+
+.Footer {
+  grid-area: footer;
+}
+
+@media(min-width: 760px) {
+  .MainContainer{
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer"
+  }
+
+  .MainContainer {
+      width: 100%;
+      background: url("../images/UgandanKnuckles.png") #fefefe no-repeat 5% bottom;
+      background-size: 500px;
+      color: #444;
+  }
+  .MainText--Firstblock
+  {
+      font-size: 42px;
+      line-height: 100%;
+  }
+  .Footnote{
+    font-size: 24px;
+    line-height: 100%;
+  }
+}
+
+@media(min-width: 992px) {
+
+  .MainText--Firstblock{
+      font-size: 72px;
+      line-height: 100%;
+  }
+  .MainContainer{
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "nav footer footer"
+  }
+  .MainContainer {
+      width: 100%;
+      background: url("../images/UgandanKnuckles.png") #fefefe no-repeat 5% bottom;
+      background-size: 750px;
+      color: #444;
+  }
+}
