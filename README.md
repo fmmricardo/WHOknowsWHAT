@@ -22,7 +22,7 @@ We'd love if you could present your learnings, hardships and insights through a 
 Enjoy learning!
 
 
-<strong>Further and beyond </strong>
+<strong>Improvements</strong>
 
 If you have a good idea, a new feature or if feel that you cant contribute for the “development” of the game, please do it. 
 We know that this is a basic and funny game that could be better. Being contributing for this small project, you are practicing concepts like, using Github, improving the game look using Css , using javascript to add new features and interactions, or even in a Design perspective, try to bring complexity to the game or/and question the usability of some of the components.
