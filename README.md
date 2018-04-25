@@ -2,7 +2,7 @@
 
 http://whoknowswhat.surge.sh/
 
-<strong>Who Knows What</strong>
+# Who Knows What
 
 Who knows what is a game created by and for TNDS2 students, but that could be used for next years of TNDS existence, if you found this useful.
 
@@ -17,7 +17,7 @@ The game use a google sheets as a data base, where the students will introduce s
 Game Rules Play only if you want to, this isn't mandatory.
 If you do participate, you have one month to work and play around with the topic. We'd love if you could present your learnings, hardships and insights through a quick presentation at the end of the month. Enjoy learning!
 
-<strong>Improvements</strong>
+# Improvements
 
 If you have a good idea, a new feature or if feel that you can contribute for the “development” of the game, please do it. We know that this is a basic and funny game that could be improved. Being contributing for this small project, you are practicing concepts like, using Github, improving the game look using Css , using javascript to add new features and interactions, or even in a Design perspective, try to bring complexity to the game or/and question the usability of some of the components.
 
@@ -29,7 +29,9 @@ Print funny messages;
 when the user try to skip the assigned tasks; 
 make a score board, that could envolve the addition of login...
 
-<strong>How can you do it: </strong>
+Soon this suggestions will be added as an issue on this repo.
+
+# How can you do it: 
 
 Create a branch with your username to know who are trying to make that change, example:
 
