@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
   var publicSpreadsheetUrl = '1TAttZmIi2fyO91M8lOy8nYsNRqwX-W7l4hTQywYAapE',
       toolsArr = [],
-      topicsArr = [],
       skillsArr = [],
       Button = document.getElementById("buttontool");
 
@@ -35,14 +34,6 @@ jQuery(document).ready(function ($) {
     }
     console.log(toolsArr);
 
-    // get Topics
-    for (var i = 0; i < data.length; i++) {
-      if ( data[i].topics !== "" ) {
-        topicsArr.push(data[i].topics);
-      }
-    }
-    console.log(topicsArr);
-
     // get Skills
     for (var i = 0; i < data.length; i++) {
       if ( data[i].skills !== "" ) {
@@ -62,11 +53,6 @@ jQuery(document).ready(function ($) {
     return randomTool;
   };
 
-  function getTheme(){
-    let randomTheme = topicsArr[Math.floor(Math.random()*topicsArr.length)];
-    return randomTheme;
-  };
-
   function getSkills(){
     let randomSkills = skillsArr[Math.floor(Math.random()*skillsArr.length)];
     return randomSkills;
@@ -74,14 +60,11 @@ jQuery(document).ready(function ($) {
 
   Button.onclick = function() {
     var resultTool = getTools(),
-        resultTheme = getTheme(),
         resultSkills = getSkills(),
         changeTool = document.getElementById("placeholdertools"),
-        changeTheme = document.getElementById("placeholdertopics"),
         changeSkills = document.getElementById("placeholderskills");
 
     changeTool.innerHTML = resultTool;
-    changeTheme.innerHTML = resultTheme;
     changeSkills.innerHTML = resultSkills;
   };
 });
